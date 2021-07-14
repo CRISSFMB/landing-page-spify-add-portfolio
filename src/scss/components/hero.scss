@@ -1,0 +1,44 @@
+* {
+  border: 0.4px solid black;
+}
+.hero {
+  background-color: rgb(31, 182, 182);
+  height: 100vh;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    .hamburger {
+      font-size: 2rem;
+    }
+
+    .icon {
+      font-size: 2rem;
+    }
+
+    .navbar {
+      display: none;
+    }
+  }
+}
+
+@include desktop {
+  .hero {
+    .nav {
+      padding: 0 1rem;
+      margin-top: 2rem;
+      .navbar {
+        display: flex;
+        align-items: center;
+        flex-basis: 25rem;
+        justify-content: space-between;
+      }
+
+      .hamburger {
+        display: none;
+      }
+    }
+  }
+}
