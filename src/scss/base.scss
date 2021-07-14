@@ -13,44 +13,15 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  color: $mainBlack;
+  color: $offWhite;
   background: $offWhite;
-  line-height: 1.4;
+  line-height: 3rem;
   font-size: 1rem;
+  overflow: hidden;
   // height: 100vh;
 }
 
 /******************************************Global Styles**********************************/
-
-/*headings*/
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: "Poppins", sans-serif;
-//   margin-bottom: 1.25rem;
-//   letter-spacing: var($mainSpacing);
-// }
-
-/*headings sizes*/
-
-// h1 {
-//   font-size: 3.3rem;
-// }
-// h2 {
-//   font-size: 2.3rem;
-// }
-// h3 {
-//   font-size: 2rem;
-// }
-// h4 {
-//   font-size: 1.2rem;
-// }
-
-/*paragraphs*/
 
 a {
   text-decoration: none;
@@ -72,4 +43,22 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+.btn {
+  padding: 1.1rem 2rem;
+  border: none;
+  cursor: pointer;
+  background-color: $rosalight;
+  color: $mainWhite;
+  transition: all ease 1s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid $mainWhite;
+}
+
+.rounded {
+  border-radius: 2rem;
 }
