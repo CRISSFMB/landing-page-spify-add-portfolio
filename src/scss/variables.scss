@@ -1,0 +1,22 @@
+/* Media Queries*/
+$phone: 280px;
+$tablet: 768px;
+$desktop: 1024px;
+
+/* colors */
+
+$mainWhite: #fff;
+$offWhite: #f7f7f7;
+$mainBlack: #222;
+$mainGrey: #ececec;
+$darkGrey: #afafaf;
+
+/* helpers */
+
+$mainTransition: all 0.3s linear;
+$mainSpacing: 0.25rem;
+$textCenter: center;
+
+/* shadows */
+$lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.25);
+$darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
