@@ -40,6 +40,9 @@
       justify-content: space-between;
 
       .list {
+        .social-icon {
+          padding-left: 0.5rem;
+        }
         .social-icon:hover {
           color: $rosalight;
         }
@@ -91,7 +94,7 @@
 
       .content-paragraph {
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.4rem;
       }
     }
   }
