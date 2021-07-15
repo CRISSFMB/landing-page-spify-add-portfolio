@@ -3,8 +3,31 @@
 
   .service {
     color: $colorText;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 590px;
+      height: 300px;
+      border-radius: 5px;
+    }
     .content-text-service {
       margin-bottom: 4rem;
+
+      @include tablet {
+        text-align: center;
+        .border {
+          margin: 0 auto;
+        }
+      }
+      @include desktop {
+        .border {
+          margin: 0;
+        }
+      }
+
       .service-title {
         color: $mainBlack;
         font-size: 2.3rem;
@@ -16,9 +39,22 @@
       }
       .service-list-container {
         list-style: square;
+        padding-left: 1rem;
+
+        @include tablet {
+          list-style: none;
+        }
+        @include desktop {
+          padding-left: 0;
+        }
         .service-list {
           .service-list-paragraph {
             margin: -5px 0;
+            font-size: 0.8rem;
+
+            @include tablet {
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -35,9 +71,15 @@
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
 
+      .content-text-service {
+        text-align: start;
+      }
+
       img {
-        width: 586px;
-        height: 416px;
+        width: 590px;
+        height: 420px;
+        border-radius: 20px;
+        box-shadow: 1px 26px 13px -17px rgba(0, 0, 0, 0.54);
       }
     }
 
@@ -46,16 +88,21 @@
       height: 416px;
       display: flex;
       align-items: center;
+      flex-direction: row-reverse;
       .content-text-service {
         text-align: start;
         background-color: $darkGrey;
-        padding: 1rem;
+        padding: 1.6rem;
         margin-bottom: 0;
         display: flex;
         align-items: start;
         justify-content: center;
         flex-direction: column;
         color: $mainBlack;
+
+        .service-title {
+          margin: 0;
+        }
       }
     }
   }

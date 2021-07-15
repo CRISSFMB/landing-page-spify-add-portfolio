@@ -42,6 +42,7 @@ ul {
 
 img {
   max-width: 100%;
+  display: inline-block;
 }
 
 .btn {
@@ -65,4 +66,11 @@ img {
 .border {
   border-bottom: 2px solid $rosalight;
   width: 3rem;
+}
+
+.container-100 {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  //   overflow: hidden;
 }
