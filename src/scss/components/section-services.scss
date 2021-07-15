@@ -1,0 +1,27 @@
+.services-section {
+  color: black;
+
+  .service {
+    color: $colorText;
+    .content-text-service {
+      margin-bottom: 4rem;
+      .service-title {
+        color: $mainBlack;
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+      }
+      .service-text {
+        line-height: 1.6rem;
+        font-size: 1rem;
+      }
+      .service-list-container {
+        list-style: square;
+        .service-list {
+          .service-list-paragraph {
+            margin: -5px 0;
+          }
+        }
+      }
+    }
+  }
+}
