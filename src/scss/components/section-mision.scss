@@ -1,0 +1,94 @@
+.section-mision {
+  position: relative;
+  .hero-mision {
+    background-image: linear-gradient(
+        to right,
+        rgba(186, 43, 162, 0.371),
+        rgba(10, 10, 10, 0.74)
+      ),
+      url("../../images/mision-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+
+    .container-text-mision {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 95%;
+      height: 15rem;
+      padding: 0 1rem;
+      background-color: $mainWhite;
+      color: $mainBlack;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .text-mision {
+        line-height: 1.6;
+        margin: 0;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+    @include desktop {
+      .container-text-mision {
+        top: 28rem;
+        height: 15rem;
+      }
+    }
+  }
+}
+
+.article-numbers {
+  margin-top: 2rem;
+
+  .content-flex-mision-text {
+    .content-number {
+      .number {
+        font-size: 2rem;
+        color: $colorNumbers;
+        font-weight: 700;
+        @include desktop {
+          font-size: 4rem;
+          padding-right: 1rem;
+        }
+      }
+      .mision-title {
+        color: $mainBlack;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+      }
+    }
+
+    .content-mision-text {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+
+      @include desktop {
+        padding-left: 4rem;
+        padding-right: 2.5rem;
+      }
+      .mision-paragraph {
+        color: $paragraph-grey;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .articles {
+    padding-top: 4rem;
+    width: 95%;
+    background-color: $mainWhite;
+    margin: 0 auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+  }
+}
