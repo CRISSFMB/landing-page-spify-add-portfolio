@@ -1,0 +1,31 @@
+.footer {
+  color: $mainWhite;
+  background-color: $mainBlack;
+  padding: 1rem;
+
+  .container-flex-footer {
+    .social-icons-footer {
+      .icon-footer {
+        font-size: 2rem;
+      }
+    }
+
+    .aboutSpify {
+      &__title {
+        font-family: "poppins", sans-serif;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .footer {
+    .container-flex-footer {
+      display: grid;
+      grid-template-columns: repeat(3, 33.3%);
+      gap: 2rem;
+      align-items: center;
+    }
+  }
+}
