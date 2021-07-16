@@ -13,6 +13,8 @@ closebutton.addEventListener("click", () => {
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    nav.classList.toggle("active");
+    if (nav.classList.contains("active")) {
+      nav.classList.remove("active");
+    }
   });
 });
