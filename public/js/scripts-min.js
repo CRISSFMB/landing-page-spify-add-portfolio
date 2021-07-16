@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var hamburger=document.querySelector(".hamburger"),nav=document.querySelector(".nav"),closebutton=document.querySelector(".nav .close"),links=document.querySelectorAll(".link");hamburger.addEventListener("click",(function(){nav.classList.toggle("active"),closebutton.classList.toggle("active")})),closebutton.addEventListener("click",(function(){nav.classList.toggle("active")})),links.forEach((function(e){e.addEventListener("click",(function(){nav.classList.toggle("active")}))}));

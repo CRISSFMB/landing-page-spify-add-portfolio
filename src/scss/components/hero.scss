@@ -24,9 +24,44 @@
     align-items: center;
     background-color: $mainBlack;
 
+    &.active {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      z-index: 200;
+
+      .navbar {
+        display: block;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .close {
+        display: block;
+        position: absolute;
+        top: 0.5rem;
+        left: 80%;
+        color: $rosalight;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: transform ease 1s;
+      }
+      .close:hover {
+        transform: scale(1.1);
+        color: rgba(255, 0, 234, 0.583);
+      }
+    }
+
     .hamburger {
       font-size: 2rem;
       cursor: pointer;
+    }
+
+    .close {
+      display: none;
     }
 
     .icon {
@@ -79,8 +114,6 @@
       font-weight: 700;
       color: $offWhite;
       text-align: center;
-
-      // Lato:wght@300;400;700&family=Poppins:wght@300;500;700
     }
 
     .content-text {
