@@ -10,18 +10,18 @@
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+  width: 100%;
   overflow: hidden;
 
   .nav {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
     color: $offWhite;
     min-height: 8vh;
     align-items: center;
-    background-color: $mainBlack;
 
     &.active {
+      background-color: $mainBlack;
       position: fixed;
       width: 100vw;
       height: 100vh;
